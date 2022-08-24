@@ -1,38 +1,40 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+.todo-header{
   text-align: center;
-}
+  color: black;
+  font-family: 'Baloo Bhai 2', cursive;
+  margin-top: 30px;
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-main{
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-left: 35%;
+  width: 30%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(159, 223, 223);
+  box-shadow: 10px 10px 20px -3px  rgb(42, 26, 26);
+  /* font-family:sans-serif; */
+}
+.close-icon {
+  margin-left: 10px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-items {
+  display: flex;
+  flex-direction: row;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.conv{
+  margin-top: -12px;
 }
